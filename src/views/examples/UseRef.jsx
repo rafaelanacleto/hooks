@@ -10,7 +10,7 @@ const UseRef = (props) => {
     const [value1, setValue1] = useState("")
     const [value2, setValue2] = useState("")
 
-    const count = useRef(0)
+    const count = useRef(0) //com use ref vc consegue acessar o current do objeto
     
     useEffect(function () {
         count.current++
