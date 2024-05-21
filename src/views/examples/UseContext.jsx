@@ -28,11 +28,11 @@ const UseContext = (props) => {
 
                 <div>
                     <button className='btn' onClick={() => setNum(1)}>
-                        Aumenta
+                        Aumenta+
                     </button>
 
                     <button className='btn' onClick={() => setNum(-1)}>
-                        Diminui
+                        Diminui-
                     </button>
                 </div>
             </div>
