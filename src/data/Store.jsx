@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import App from "../views/App";
 
 const initialState = {
-    number: 0,
+    number: 1,
     text: 'context api + Hooks'
 }
 
@@ -10,7 +9,7 @@ export const AppContext = React.createContext(initialState)
 
 const Store = props => {
 
-    const [state, setState] = useState(AppContext)
+    const [state, setState] = useState(initialState)
 
     function updateState(key, value) {
         setState({
@@ -21,11 +20,11 @@ const Store = props => {
 
     return (
         <AppContext.Provider value={{
-            number: state.number,
-            text: state.text,
-            setNumber: n => updateState('number', n),
-            setNumber: t => updateState('text', t)
-        }}>
+                number: state.number,
+                text: state.text,
+                setNumber: n => updateState('number', n),
+                setText: t => updateState('text', t)
+            }}>
             {props.children}
         </AppContext.Provider>
     )
