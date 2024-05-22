@@ -38,3 +38,13 @@ body {
     align-items: center;
     text-align: center;
 }
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1px 1px 1px 1px !important;
+    padding: 1px 1px 1px 1px !important;
+}
