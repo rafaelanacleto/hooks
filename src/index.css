@@ -39,6 +39,14 @@ body {
     text-align: center;
 }
 
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    text-align: left;
+}
+
 .formulario {
     display: flex;
     flex-direction: column;
@@ -48,3 +56,20 @@ body {
     margin: 1px 1px 1px 1px !important;
     padding: 1px 1px 1px 1px !important;
 }
+
+ul.ulClass {
+    border: solid 1px skyblue;
+    border-radius: 8px;   
+    align-items: start;
+    text-align: left;
+    vertical-align: middle;
+    
+  }
+  
+  ul.ulClass li {    
+    list-style-type: none !important;
+    background: url('../public/arrow-right.svg') no-repeat left;
+    margin-bottom: 1rem;
+    padding: 0px 0 3px 24px;
+
+  }
